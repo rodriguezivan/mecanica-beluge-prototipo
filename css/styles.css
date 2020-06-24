@@ -9,7 +9,7 @@ html, body {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;     
-    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Raleway', sans-serif;
 }
 .container {
     border: solid 1px red;
@@ -100,6 +100,7 @@ body {
     text-align: center;
     border-bottom: solid 1px #ddd !important;
     padding-bottom: 7px;
+    /* font-weight: bold; */
 }
 .subtitle {
     border: solid 1px green; 
@@ -171,7 +172,7 @@ body {
     padding-bottom: 90px;    
 }
 .services .container {
-    align-items: initial;    
+    align-items: initial;        
 }
 .title-secondary {
     /* border: solid 1px yellow; */
@@ -179,7 +180,7 @@ body {
     text-align: center;
     padding: 50px 0 70px 0;
     font-size: 30px;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     font-weight: bold;
 }
 .service-item {
@@ -213,12 +214,14 @@ body {
     text-align: center;
     padding-top: 15px;
 }
-.service-link {
-    border: solid 1px yellow;
+.service-link {    
     display: inline-block;
     margin-top: 7px;
     color: #0c63ce;
     font-weight: bold;
+}
+.service-link:hover {
+    text-decoration: none;
 }
 /* Notice */
 .notice {
@@ -400,7 +403,21 @@ body {
 /* Partner */
 .partner {
     /* border: solid 1px blue !important; */
+    background: #292929;
+    color: white;
     padding-bottom: 50px;
+    position: relative;
+}
+.partner::after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";    
+    z-index: 9;    
+    position: absolute;    
+    border-top-color: #292929;
+    border-width: 20px;
+    margin-left: -20px;
 }
 .partner .container {
     /* border: solid 1px red !important; */
@@ -414,7 +431,7 @@ body {
     /* border: solid 1px green !important; */
     text-align: center;      
     margin: 0;  
-    padding-bottom: 50px;   
+    padding-bottom: 30px;   
     font-size: 24px;  
     letter-spacing: 1px; 
 }
@@ -423,7 +440,7 @@ body {
 }
 .partner-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
 }
 /* Footer */
 .footer {
