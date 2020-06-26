@@ -31,3 +31,8 @@ setTimeout(showButtonFixed, 15000);
 document.getElementById('button-chat').addEventListener('click', () => {
     window.open('https://wa.me/542664307958?text=Consulta%20de mecanicabeluge.com:%20', '_blank');
 });
+
+document.getElementById('button-telephone').addEventListener('click', (event) => {
+    event.preventDefault();
+});
+
