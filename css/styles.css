@@ -10,6 +10,8 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;     
     font-family: 'Raleway', sans-serif;
+    /* background: #292929; */
+    background: #343434;
 }
 .container {
     border: solid 1px red;
@@ -47,6 +49,9 @@ body {
 }
 .menu {
     border: solid 1px green;
+    padding: 0;
+    background: transparent;
+    color: rgba(202, 206, 221, 0.8);
 }
 .menu ul {
     display: flex;
@@ -56,22 +61,33 @@ body {
 }
 .menu ul li {
     display: inline-block;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     border: solid 1px yellow;
 }
 .link {
-    text-decoration: none;
-    color: white;     
+    text-decoration: none;     
     font-weight: bold;
-    color: rgba(202, 206, 221, 0.8);
+    color: rgba(202, 206, 221, 0.8) !important;
+    padding-right: 0 !important;
+    padding-left: 25px !important;
 }
 .link:hover {
-    text-decoration: none;
-    color: rgba(202, 206, 221, 1);        
+    text-decoration: none;         
+    color: white !important;        
 }
 .link.active {
     color: #fff;
     border-bottom: solid 1px !important;
+}
+/* Agregados para Menú Responsive */
+.menu-list {
+    border: solid 1px green;
+    color: red;
+    justify-content: flex-end;
+}
+.burger-button i {
+    color: white;
+    font-size: 1.2em;
 }
 /* Hero */
 .hero {
@@ -92,8 +108,14 @@ body {
     height: 100%;    
 }
 .hero-description {
-    border: solid 1px red;
+    /* border: solid 1px red !important; */
     text-align: center;
+}
+.hero-image {
+    /* border: solid 1px green !important; */
+    width: 100%;
+    max-width: 555px;
+    margin-top: 10%;
 }
 .title-main {
     font-size: 56px;
@@ -172,10 +194,11 @@ body {
 /* Services */
 .services {
     /* border: solid 1px blue !important;     */
+    background: white;
     padding-bottom: 90px;    
 }
 .services .container {
-    align-items: initial;        
+    align-items: initial;              
 }
 .title-secondary {
     /* border: solid 1px yellow; */
@@ -185,6 +208,7 @@ body {
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
+    position: relative;
 }
 .service-item {
     /* border: solid 1px green !important; */
@@ -279,8 +303,9 @@ body {
 }
 /* Questions */
 .questions {
+    background: white;
     border: solid 1px blue;
-    padding-bottom: 40px;    
+    padding-bottom: 40px;        
 }
 .questions .container {
     /* border: solid 1px red;     */
@@ -328,7 +353,7 @@ body {
     position: absolute;    
     border-top-color: #000;
     border-width: 20px;
-    margin-left: -20px;
+    margin-left: -20px;    
 }
 .contact .container {
     justify-content: space-evenly;
@@ -359,6 +384,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     border: solid 1px yellow;
 }
 .social-link {
@@ -396,7 +422,12 @@ body {
     font-size: 16px;
     font-weight: bold;
 }
-
+.email {
+    background-image: url('../img/social/email.png');
+    background-size: 45px 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .button-location {
     /*border: 2px solid white !important;*/
     color: white;
@@ -420,9 +451,10 @@ body {
 /* Partner */
 .partner {
     /* border: solid 1px blue !important; */
-    background: #292929;
+    /* background: #292929; */
+    background: black;
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 55px;
     position: relative;
 }
 .partner::after {
@@ -432,7 +464,8 @@ body {
     content: " ";    
     z-index: 9;    
     position: absolute;    
-    border-top-color: #292929;
+    /* border-top-color: #292929; */
+    border-top-color: black;
     border-width: 20px;
     margin-left: -20px;
 }
@@ -472,18 +505,20 @@ body {
 .footer .container {
     /* display: block; */
     /* border: solid 1px red !important; */
-    padding: 15px 0;
+    padding: 15px 15px;
 }
 .footer-description {
     /* border: solid 1px green !important; */
     margin: 0;
-    font-weight: bold;
+    /* font-weight: bold; */
     letter-spacing: 1.5px;
+    color: #bbb;
 }
 .footer-description.author {
     font-weight: normal;
     font-size: 0.9em;
     letter-spacing: normal;
+    color: #bbb;
 }
 /* Reprogramming */
 .reprogramming .container {
@@ -520,8 +555,10 @@ body {
 }
 .reprogramming {
     /* border: solid 1px blue !important; */
-    padding-top: 90px;
-    padding-bottom: 90px;    
+    /* padding-top: 90px;
+    padding-bottom: 90px;    */
+    padding: 10% 0 8% 0;
+    background: white;
 }
 .reprogramming .accordion {
     /* border: solid 1px yellow !important; */
@@ -529,7 +566,8 @@ body {
 }
 /* Products */
 .container.products {    
-    justify-content: center;
+    justify-content: center;        
+    padding: 2% 0 15% 0;
 }
 .title-warning {
     text-align: center;
@@ -538,16 +576,21 @@ body {
 /* All */
 .button-fixed {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 15px;
     z-index: 10;
-    width: 56px;
-    height: 56px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     color: white;
     font-size: 32px;
-    background: rgba(204, 0, 0, 1);
+    /* background: rgba(204, 0, 0, 1); */    
+    background: #1b9a59;
     visibility: hidden;
+}
+.opacity {
+    /* border: solid 1px red !important; */
+    opacity: 0;
 }
 
 
