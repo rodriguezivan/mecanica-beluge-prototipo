@@ -454,7 +454,7 @@ body {
     /* background: #292929; */
     background: black;
     color: white;
-    padding-bottom: 55px;
+    padding-bottom: 60px;
     position: relative;
 }
 .partner::after {
@@ -474,8 +474,9 @@ body {
     justify-content: center;
 }
 .partner .title-secondary {
-    padding-top: 50px;
-    padding-bottom: 15px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    letter-spacing: 2.5px;
 }
 .subtitle-partner {
     /* border: solid 1px green !important; */
@@ -490,7 +491,7 @@ body {
 }
 .partner-image {
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
 }
 /* Footer */
 .footer {
@@ -525,7 +526,8 @@ body {
     /* border: solid 1px red !important; */
 }
 .reprogramming-header {
-    background: url('../img/reprogramacion/reprogramming.jpg');
+    /* background: url('../img/reprogramacion/reprogramming.jpg'); */
+    background: url('../img/reprogramacion/portada.jpeg');
     background-color: #222529;
     background-repeat: no-repeat;
     background-position: 20% 50%;    
