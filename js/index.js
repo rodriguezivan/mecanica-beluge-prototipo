@@ -26,7 +26,7 @@ function showButtonFixed() {
     document.querySelector('.button-fixed').setAttribute('style', 'visibility: visible;');
 }
 
-setTimeout(showButtonFixed, 15000);
+setTimeout(showButtonFixed, 1000);
 
 document.getElementById('button-chat').addEventListener('click', () => {
     window.open('https://wa.me/542664307958?text=Consulta%20de mecanicabeluge.com:%20', '_blank');

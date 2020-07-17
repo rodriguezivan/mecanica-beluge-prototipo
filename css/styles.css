@@ -114,7 +114,8 @@ body {
 .hero-image {
     /* border: solid 1px green !important; */
     width: 100%;
-    max-width: 555px;
+    /* max-width: 555px; */
+    max-width: 540px;
     margin-top: 10%;
 }
 .title-main {
@@ -581,14 +582,17 @@ body {
     bottom: 15px;
     right: 15px;
     z-index: 10;
-    width: 54px;
-    height: 54px;
+    width: 54px !important;
+    height: 54px !important;
     border-radius: 50%;
     color: white;
-    font-size: 32px;
-    /* background: rgba(204, 0, 0, 1); */    
+    /* font-size: 32px;       */
     background: #1b9a59;
     visibility: hidden;
+}
+.button-fixed img {
+    width: 30px !important;
+    max-width: 30px !important;
 }
 .opacity {
     /* border: solid 1px red !important; */
