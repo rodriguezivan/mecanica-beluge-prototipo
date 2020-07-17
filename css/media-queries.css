@@ -86,8 +86,9 @@
 }
 @media screen and (max-width: 480px) { 
     .hero {      
-        height: 80%;
-        background: #1b1f23 !important;
+        height: 75%;
+        background: url('../img/hero-01.jpg') !important; 
+        background-position: 50% 20% !important;
     }
     .button-main {
         padding: 8px 12px;
