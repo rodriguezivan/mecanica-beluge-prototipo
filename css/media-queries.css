@@ -2,7 +2,7 @@
     /* body {
         background: yellow;
         box-sizing: border-box;
-    }       */
+    }       */    
     .header .container {
         height: auto;
         padding-top: 5px;
@@ -14,6 +14,15 @@
     }
     .link {
         padding-left: 0 !important;
+    }
+    .about-info, .about-gallery {
+        width: 100%;
+    }
+    .about-info {
+        padding: 1.2em;
+    }
+    .about-info p {
+        text-align: center;
     }
     .services {
         padding-bottom: 15px;
@@ -46,6 +55,12 @@
     .service-item {        
         width: 49%;
         margin-bottom: 15px;
+    }
+    .service-mobile {
+        display: none;        
+    }
+    .button-more {
+        display: inline-block;
     }
     .notice h2 {        
         font-size: 1.5em;

@@ -26,7 +26,7 @@ function showButtonFixed() {
     document.querySelector('.button-fixed').setAttribute('style', 'visibility: visible;');
 }
 
-setTimeout(showButtonFixed, 1000);
+setTimeout(showButtonFixed, 10000);
 
 document.getElementById('button-chat').addEventListener('click', () => {
     window.open('https://wa.me/542664307958?text=Consulta%20de mecanicabeluge.com:%20', '_blank');
@@ -34,5 +34,14 @@ document.getElementById('button-chat').addEventListener('click', () => {
 
 document.getElementById('button-telephone').addEventListener('click', (event) => {
     event.preventDefault();
+});
+
+document.querySelector('.button-more').addEventListener('click', (event) => {               
+    var items = document.getElementsByClassName('service-mobile');
+
+    for (element of items) {                 
+        element.style. display = 'block';                        
+    }
+    event.target.style.display = 'none';    
 });
 

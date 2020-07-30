@@ -174,7 +174,8 @@ body {
     content: " ";    
     z-index: 9;    
     position: absolute;    
-    border-top-color: #343434;
+    /* border-top-color: #343434; */
+    border-top-color: transparent;
     border-width: 20px;
     margin-left: -20px;
 }
@@ -206,7 +207,7 @@ body {
     margin: 0;
     text-align: center;
     padding: 50px 0 70px 0;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 2px;
     font-weight: bold;
     position: relative;
@@ -249,6 +250,26 @@ body {
     font-weight: bold;
 }
 .service-link:hover {
+    text-decoration: none;
+}
+.button-more {
+    /* display: inline-block; */
+    display: none;    
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white !important; 
+    background: #c00;
+    /* border: solid 2px #c00 !important;
+    color: #c00 !important; */
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    margin: 30px 0 0 0;
+}
+.button-more:hover {
+    color: white !important;
     text-decoration: none;
 }
 /* Notice */
@@ -417,11 +438,12 @@ body {
     transition: 0.5s;
 }
 .telephone p {
-    position: absolute;
-    bottom: -65px;
+    position: absolute;    
+    bottom: -70px;
     text-align: center;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: bold;    
+    padding-bottom: 5px;
 }
 .email {
     background-image: url('../img/social/email.png');
@@ -521,6 +543,52 @@ body {
     font-size: 0.9em;
     letter-spacing: normal;
     color: #bbb;
+}
+.about {
+    /* border: solid 1px blue !important; */    
+}
+.about .container-fluid {
+    /* border: solid 1px red !important; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;    
+    padding-right: 0;
+}
+.about-info {
+    /* border: solid 1px green !important;   */
+    width: 50%;  
+    background: radial-gradient(#dd3228, #3c3c3c);    
+    background: #dd3228;        
+    padding: 0 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-gallery {
+    /* border: solid 1px green !important;     */
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.about-info .title-secondary {
+    color: white;
+    padding-top: 0; 
+    padding-bottom: 20px;   
+}
+.about-info p {
+    color: white;
+    /* text-align: justify; */
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.about-image {
+    width: 50%;
+}
+.about-image img {
+    width: 100%;    
 }
 /* Reprogramming */
 .reprogramming .container {

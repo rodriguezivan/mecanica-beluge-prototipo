@@ -10,6 +10,10 @@ $(window).scroll(() => {
     if (position >= hero) {
         $('.brands .container').addClass('animate__animated animate__fadeInUp');          
     }     
+    if (position >= brands - 300) {
+        $('.about-info h2').addClass('animate__animated animate__fadeInUp');
+        $('.about-info p').addClass('animate__animated animate__fadeInUp');
+    }
     if (position >= services - 450) {
         $('.services .container').addClass('animate__animated animate__fadeInUp');  
     }
@@ -22,6 +26,8 @@ $(window).scroll(() => {
     if (position >= contact - 400) {
         $('.contact').addClass('animate__animated animate__fadeIn');       
         $('.footer .container').addClass('animate__animated animate__fadeInUp');   
-    }
-    // console.log(hero);
+    }    
 });
+
+$('.hero-image').addClass('animate__animated animate__fadeInDownBig');
+$('.arrow').addClass('animate__animated animate__fadeInUp');
